@@ -1,15 +1,31 @@
 ## Magento 2 Crisp Chat extension 
 
-Are you selling products on an online Magento store? 
-**Magento 2 Crisp Chat extension extension** is for you!
+You want to use the Crisp live chat plugin for your Magento website. Magento 2 Crisp Chat Extebsion by Magepow will help you add Crisp to your Magento website with just one click.
+
+### Description
+
+Live chat software is becoming more and more popular and an indispensable part of websites, especially e-commerce sites. 
+
+This is an online communication application that allows you and your website visitors to chat right on the website. To start a chat, customers simply click on the chat bubble, a chat box appears inside, visitors will be able to send and receive messages from you.
+
+Currently, Crisp is one of the live chat plugins that is trusted by many businesses. 
+
+Our Magento 2 Crisp Chat Extension will help you integrate this application into your Magento website in the simplest way.
 
 [![Latest Stable Version](https://poser.pugx.org/magepow/crispchat/v/stable)](https://packagist.org/packages/magepow/crispchat)
 [![Total Downloads](https://poser.pugx.org/magepow/crispchat/downloads)](https://packagist.org/packages/magepow/crispchat)
 
 ### Magepow_Crispchat Features
-- Config easy config with Crisp Chat ID
 
-## 1. How to install Magento 2 Crisp Chat
+**Easy configuration with Crisp Chat ID**
+
+To integrate Crisp live chat plugin into Magento, you need to install Magento 2 Crisp Chat Extension. After registering to use Crisp [here](https://crisp.chat/en/), you can find WebsiteID provided by Crisp following [this guide](https://help.crisp.chat/en/article/how-to-find-the-website-id-1ylqx1s/), copy and fill ID in “Crisp website Id” in our extension, enable this extension, and you can use live chat on your website.
+
+**Enabled mode no-js support optimize scores Gtmetrix or Google PageSpeed Insights**
+
+Website often slows down when embedding third-party libraries. If you enable this feature, only when hovering over images on the site and Crisp images will appear, it will speed up the website when testing by Gtmetrix or Google PageSpeed Insights. However, the downside of this feature is that it will make the images on the website not display until the mouse is moved. Please consider when enabling this feature.
+
+## 1. How to install Magento 2 Crisp Chat 
 
 ### a. Install via composer (recommend)
 
@@ -104,4 +120,3 @@ If this project help you reduce time to develop, you can give me a cup of coffee
 * [Customization Service](https://magepow.com/customization-service.html)
 
 * [Hire Magento Developer](https://magepow.com/hire-magento-developer.html)
-
