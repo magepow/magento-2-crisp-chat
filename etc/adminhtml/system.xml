@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- /**
+ * @Author: nguyen
+ * @Date:   2020-02-12 14:01:01
+ * @Last Modified by:   nguyen
+ * @Last Modified time: 2020-04-28 18:55:34
+ */ -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magepow" translate="label" sortOrder="86">
+            <label>Magepow</label>
+        </tab>
+        <section id="magepow_crispchat" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Crisp Chat</label>
+            <tab>magepow</tab>
+            <resource>Magepow_Crispchat::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="0"  showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enabled</label>
+                    <comment>Enabled Module</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="crisp_website_id" translate="label comment" type="text" sortOrder="10"  showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Crisp website Id</label>
+                    <comment><![CDATA[You can find ID follow guide <a href="https://help.crisp.chat/en/article/how-to-find-the-website-id-1ylqx1s/">Visit here!</a> or Register an account <a href="https://crisp.chat/">here!</a> ]]></comment>
+                    <depends><field id="zoomType" separator=",">window</field></depends>
+                </field>
+                <field id="no_js" translate="label comment" type="select" sortOrder="20"  showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enabled mode no-js</label>
+                    <comment><![CDATA[This support optimize scores <a href="https://gtmetrix.com/">Gtmetrix</a> or <a href="https://developers.google.com/speed/pagespeed/insights/">Google pagespeed</a>]]></comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

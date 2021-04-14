@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- /**
+ * @Author: nguyen
+ * @Date:   2020-02-12 14:01:01
+ * @Last Modified by:   nguyen
+ * @Last Modified time: 2020-04-28 18:55:34
+ */ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+	    <magepow_crispchat>
+            <general>
+                <enabled>1</enabled>
+                <crisp_website_id>835d8ee6-a11f-45bd-95a5-d5890cafdd37</crisp_website_id>
+                <no_js>0</no_js>
+            </general>
+        </magepow_crispchat>    
+	</default>
+</config>
