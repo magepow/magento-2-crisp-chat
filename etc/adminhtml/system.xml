@@ -25,8 +25,7 @@
                 </field>
                 <field id="crisp_website_id" translate="label comment" type="text" sortOrder="10"  showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Crisp website Id</label>
-                    <comment><![CDATA[You can find ID follow guide <a href="https://help.crisp.chat/en/article/how-to-find-the-website-id-1ylqx1s/">Visit here!</a> or Register an account <a href="https://crisp.chat/">here!</a> ]]></comment>
-                    <depends><field id="zoomType" separator=",">window</field></depends>
+                    <comment><![CDATA[You can find ID follow guide <a href="https://help.crisp.chat/en/article/how-to-find-the-website-id-1ylqx1s/">visit here!</a> or register an account <a href="https://crisp.chat/">here!</a> ]]></comment>
                 </field>
                 <field id="no_js" translate="label comment" type="select" sortOrder="20"  showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Enabled mode no-js</label>
