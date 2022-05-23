@@ -1,24 +1,19 @@
 <?php
 $helper         = $this->helper('Magepow\Crispchat\Helper\Data');
 $crispWebsiteId = $helper->getConfigModule('general/crisp_website_id');
+$customer       = $this->getCustomer();
 if(!$crispWebsiteId) return;
-$noJs = $helper->getConfigModule('general/no_js');
 ?>
-<?php if(!$noJs) : ?>
-    <link rel="preload" href="https://client.crisp.chat/l.js" as="script">
-    <script type="text/javascript">
-        require(['jquery'], function($){
-            "use strict";
-            window.$crisp=[];window.CRISP_WEBSITE_ID="<?php echo $crispWebsiteId ?>";(function(){let d=document; let s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
-        });
-    </script>
-<? else : ?>
-    <script type="text/javascript">
+<script type="text/javascript">
     require(['jquery'], function($){
         "use strict";
         $("body").one("mousemove", function() {
             window.$crisp=[];window.CRISP_WEBSITE_ID="<?php echo $crispWebsiteId ?>";(function(){let d=document; let s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+            <?php if($customer->isLoggedIn()) : ?>
+                <?php $info = $customer->getCustomer(); ?>
+                $crisp.push(["set", "user:email", ["<?php echo $info->getEmail() ?>"]]);
+                $crisp.push(["set", "user:nickname", ["<?php echo $info->getName() ?>"]]);
+            <?php endif; ?>
         });
     });
 </script>
-<?php endif ?>
