@@ -15,7 +15,7 @@ Our Magento 2 Crisp Chat Extension will help you integrate this application into
 [![Latest Stable Version](https://poser.pugx.org/magepow/crispchat/v/stable)](https://packagist.org/packages/magepow/crispchat)
 [![Total Downloads](https://poser.pugx.org/magepow/crispchat/downloads)](https://packagist.org/packages/magepow/crispchat)
 [![Daily Downloads](https://poser.pugx.org/magepow/crispchat/d/daily)](https://packagist.org/packages/magepow/crispchat)
-### Magepow_Crispchat Features
+### Magepow Crispchat Features
 
 **Easy configuration with Crisp Chat ID**
 
